@@ -338,21 +338,6 @@
         <source-file src="src/android/Diagnostic_Camera.java" target-dir="src/cordova/plugins" />
         <!--END_MODULE CAMERA-->
 
-        <!--BEGIN_MODULE NOTIFICATIONS-->
-        <config-file target="config.xml" parent="/*">
-            <feature name="Diagnostic_Notifications" >
-                <param name="android-package" value="cordova.plugins.Diagnostic_Notifications"/>
-                <param name="onload" value="true" />
-            </feature>
-        </config-file>
-
-        <js-module name="Diagnostic_Notifications" src="www/android/diagnostic.notifications.js">
-            <merges target="cordova.plugins.diagnostic.notifications" />
-        </js-module>
-
-        <source-file src="src/android/Diagnostic_Notifications.java" target-dir="src/cordova/plugins" />
-        <!--END_MODULE NOTIFICATIONS-->
-
         <!--BEGIN_MODULE MICROPHONE-->
         <js-module name="Diagnostic_Microphone" src="www/android/diagnostic.microphone.js">
             <merges target="cordova.plugins.diagnostic.microphone" />

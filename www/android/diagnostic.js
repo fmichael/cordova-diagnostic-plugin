@@ -1007,28 +1007,6 @@ var Diagnostic = (function(){
         }
     };
 
-    /**********************
-     * Remote Notifications
-     **********************/
-
-    /**
-     * Checks if remote notifications is available to the app.
-     * Returns true if remote notifications are switched on.
-     *
-     * @param {Function} successCallback -  The callback which will be called when the operation is successful.
-     * This callback function is passed a single boolean parameter which is TRUE if remote notifications is available.
-     * @param {Function} errorCallback -  The callback which will be called when the operation encounters an error.
-     *  This callback function is passed a single string parameter containing the error message.
-     */
-    Diagnostic.isRemoteNotificationsEnabled = function(successCallback, errorCallback) {
-        if(cordova.plugins.diagnostic.notifications){
-            cordova.plugins.diagnostic.notifications.isRemoteNotificationsEnabled.apply(this, arguments);
-        }else{
-            throw "Diagnostic Notifications module is not installed";
-        }
-    };
-
-
     /***************************
      * Microphone / Record Audio
      ***************************/
